@@ -29,5 +29,7 @@ out=$(echo おひつじ座 | ./uranai)
 out=$(echo 無効な文字列 | ./uranai)
 [ "$?" = 1 ] || ng "$LINENO"
 
+[ "$res" = 0 ] && echo OK
 
+exit "$res"
 
