@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import random
+import sys
 
 seizas = [
     "おひつじ座", "おうし座", "ふたご座", "かに座", "しし座", "おとめ座",
@@ -12,11 +13,13 @@ seizas = [
 unkos = ["大吉", "中吉", "小吉", "吉", "末吉", "凶", "大凶"]
 weights = [10, 20, 30, 15, 15, 8, 2]
 
-print("星座占い結果")
-print("=====================")
-for seiza in seizas:
+seiza = sys.stdin
+   
+    seiza in seizas:
     unko = random.choices(unkos, weights)[0]
-    print(f"{seiza}: {unko}")
+    print(f"{seiza}の運勢: {unko}")
+
+
 
 
 
