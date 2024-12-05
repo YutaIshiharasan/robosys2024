@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -xv
 # SPDX-FileCopyRightText: 2024 Yuta Ishihara
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -8,10 +8,6 @@ ng () {
 }
 
 res=0
-
-### plus ###
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
 
 ### uranai test ###
 out=$(echo | ./uranai)

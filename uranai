@@ -21,3 +21,6 @@ for seiza in sys.stdin:
     if seiza in seizas:
         unko = random.choices(unkos, weights)[0]
         print(f"{seiza}の運勢: {unko}")
+
+    else:
+        exit(1)
